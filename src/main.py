@@ -17,7 +17,7 @@ path = download(zip_link, max_r["tag_name"] + ".zip")[0]
 
 user = os.getenv("USERPROFILE")
 destination = os.path.join(user, "Documents")
-remove(os.path.join(destination, "Bar numérique"))
+remove(os.path.join(destination, "Bar-numerique"))
 
 print(destination)
 folder_name = unzip(path, destination)
@@ -26,4 +26,7 @@ remove(path)
 
 temp_folder = os.path.join(destination, folder_name)
 print(temp_folder)
-rename(temp_folder, "Bar numérique")
+rename(temp_folder, "Bar-numerique")
+
+# TODO: Don't make it download if it is already up to date
+# TODO: Make it handle errors and exceptions
