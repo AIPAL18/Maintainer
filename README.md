@@ -1,2 +1,3 @@
 # Maintainer
- S'occupe des updates
+
+Performe les mise-à-jour.
